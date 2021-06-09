@@ -34,13 +34,21 @@ download_project() {
     mkdir -p ${dst}
     tar -m -zxf ${download_dir}/${download_name}.${commit}.tar.gz -C ${dst}
 }
+download_project_depot_tools() {
+    local repo=$1
+    local commit=$2
+    local dowmload_dir=$3
+    local download_name=$4
+    local dst=$5
+    git clone ${repo}  ${dst}
+}
 
 # depto_tools
 repo=https://github.com/QtyearLin/depot_tools.git
 commit=e1b6ad8f5ff607eb4fb7480739a1daf7b2904b22
 name=depto_tools
 dst=depto_tools
-download_project ${repo} ${commit} ${download_dir} ${name} ${download_dir}/${dst}
+download_project_depot_tools ${repo} ${commit} ${download_dir} ${name} ${download_dir}/${dst}
 
 # third_party/yasm
 module_name=yasm
