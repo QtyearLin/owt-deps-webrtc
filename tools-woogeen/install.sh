@@ -37,7 +37,7 @@ download_project() {
 
 # depto_tools
 repo=https://github.com/QtyearLin/depot_tools.git
-commit=be812619bdaa990418316ca1cefac5de8bbd3adb
+commit=e1b6ad8f5ff607eb4fb7480739a1daf7b2904b22
 name=depto_tools
 dst=depto_tools
 download_project ${repo} ${commit} ${download_dir} ${name} ${download_dir}/${dst}
