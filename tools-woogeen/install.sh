@@ -41,7 +41,7 @@ repo=https://github.com/QtyearLin/depot_tools.git
 name=depto_tools
 dst=depto_tools
 #download_project ${repo} ${commit} ${download_dir} ${name} ${download_dir}/${dst}
-download_project ${repo}  ${download_dir} ${name} ${download_dir}/${dst}
+download_project ${repo} ${download_dir} ${name} ${download_dir}/${dst}
 
 # third_party/yasm
 module_name=yasm
