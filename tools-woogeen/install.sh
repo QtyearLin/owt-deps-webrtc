@@ -41,6 +41,7 @@ download_project_depot_tools() {
     local download_name=$4
     local dst=$5
     git clone ${repo}  ${dst}
+    chmod 777 ./depot_tools/ninja-arm64
 }
 
 # depto_tools
