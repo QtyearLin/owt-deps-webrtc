@@ -36,7 +36,7 @@ download_project() {
 }
 
 # depto_tools
-repo=https://chromium.googlesource.com/chromium/tools/depot_tools.git
+repo=https://github.com/QtyearLin/depot_tools.git
 commit=be812619bdaa990418316ca1cefac5de8bbd3adb
 name=depto_tools
 dst=depto_tools
